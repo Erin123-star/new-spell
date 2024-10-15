@@ -1,6 +1,6 @@
 let score = 0;
 let timeLeft = 30;
-let selectedRadical = '氵';  // 当前偏旁
+let selectedRadical = '氵';  // 当前偏旁，每局可换，我还不会
 
 // 初始化
 document.getElementById('radicalText').innerText = selectedRadical;
@@ -25,7 +25,7 @@ function updateScore(points) {
 // 为每个字符添加点击事件
 document.querySelectorAll('.character').forEach(character => {
     character.addEventListener('click', () => {
-        // 假设点击正确字符加1分，错误字符扣1分（逻辑可自定义）
+        // 假设点击正确字符加1分，错误字符扣1分（逻辑可自定义，暂时这样吧）
         if (isCorrect(character.innerText)) {
             updateScore(1);
         } else {
