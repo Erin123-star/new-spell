@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>拼字大闯关</title>
+    <title>汉字拼字游戏</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,15 +15,14 @@
         </header>
         <main>
             <div id="radical">偏旁：<span id="radicalText">氵</span></div>
-            <div class="grid">
-                <div class="column" id="column1">
+            <div class="scroll-container">
+                <div class="scroll-column" id="scrollColumn">
+                    <!-- 动态生成字符 -->
                     <div class="character">木</div>
                     <div class="character">日</div>
                     <div class="character">口</div>
                     <div class="character">人</div>
                     <div class="character">土</div>
-                </div>
-                <div class="column" id="column2">
                     <div class="character">车</div>
                     <div class="character">见</div>
                     <div class="character">火</div>
@@ -35,8 +34,8 @@
         <footer>
             <div id="score">分数: <span id="scoreValue">0</span></div>
         </footer>
-    </div>
 
     <script src="script.js"></script>
+    </div>
 </body>
 </html>
