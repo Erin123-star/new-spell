@@ -37,7 +37,7 @@ document.querySelectorAll('.character').forEach(character => {
 // 简单的判断逻辑，手动设定正确组合
 function isCorrect(char) {
     const correctCombinations = {
-        '氵': ['木', '日', '口', '车']  // 假设这些是合法组合 待引入库确认 不会啊啊啊啊啊啊啊啊 为什么老祖宗给这么多字啊
+        '氵': ['木', '日', '口', '车']  // 暂时假设这些是是对的 待引入库确认 不会啊啊啊啊啊啊啊啊 为什么老祖宗给这么多字啊
     };
 
     return correctCombinations[selectedRadical]?.includes(char) || false;
